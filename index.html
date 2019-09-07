@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Straw Hat Sundae Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/71f7ff4363.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Staatliches&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
+          <a class="navbar-brand" href="#"><i class="fas fa-ice-cream"></i>The Straw Hat</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#generator-header">Sundae Generator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu-header">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Location & Hours</a>
+              </li>
+            </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <section class="container-fluid" id="top-section">
+        <div class="container">
+          <h1 id="brand-text">The Straw Hat Sundae Shop</h1>
+          <img class="img-fluid" src="icecream3a.png" alt="ice-cream" id="header-img">
+        </div>
+      </section>
+      <section class="container-fluid text-center section-header">
+          <h1 id="about">About The Straw Hat</h1>
+      </section>
+      <section class="container-fluid px-0">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="text-center">The Straw Hat Sundae Shop...</h1>
+            <p class="element-text">serves the best ice cream you can find in North East, Pennsylvania. 
+              You no longer have to make the trip to State College for Berkey Creamery Ice Cream, Penn State University's famous dessert.
+            The Straw Hat now proudly serves the ice cream from Berkey Creamery!</p>
+          </div>
+          <div class="col-lg-6 d-none d-md-block">
+            <img class="img-fluid" src="icecream1.jpg" alt="ice-cream">
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid text-center" id="generator-header">
+          <h1>Sundae Generator</h1>
+          <h3>click the buttons to see your custom sundae!</h3>
+      </section>
+
+      <section class="container-fluid px-0">
+          <div class="row align-items-center">
+            <div class="col-lg-4 d-md-block pink-box box" id="about">
+              <h1 class="text-center">Ice Cream Flavor</h1>
+                <div id="answer-box1">
+                  <input type="button" value="click for ice cream flavor" onClick="showFlavor();" id="iceCreamButton">
+                  <BR>
+                  <span id="iceCreamFlavor" class="results"></span>
+                </div>
+            </div>
+
+          <div class="col-lg-4 d-md-block white-box box">
+              <h1 class="text-center">Syrup Flavor</h1>
+              <div id="answer-box1">
+                  <input type="button" value="click for syrup flavor" onClick="showSyrup();" id="syrupButton">
+                  <BR>
+                  <span id="syrupFlavor" class="results"></span>
+                </div>
+           </div>
+
+      
+          <div class="col-lg-4 d-md-block brown-box box">
+              <h1 class="text-center">Sprinkle Flavor</h1>
+              <div id="answer-box1">
+                  <input type="button" value="click for sprinkle flavor" onClick="showSprinkles();" id="sprinkleButton">
+                  <BR>
+                  <span id="sprinkleFlavor" class="results"></span>
+                </div>
+           </div>
+         </div>
+       </section>
+      
+       <section class="container-fluid text-center section-header">
+          <h1 id="menu-header">Our Menu Items</h1>
+      </section>
+
+      <section class="container-fluid px-0">
+          <div class="row align-items-center">
+            <div class="col-lg-6 brown-box box">
+              <h1 class="text-center">Our Soft Serve Menu</h1>
+                <ul>
+                  <li>Vanilla</li>
+                  <li>Chocolate</li>
+                  <li>Twist</li>
+                  <li>Orange</li>
+                  <li>Orange-Vanilla Twist</li>
+                  <li>Strawberry</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 pink-box box">
+                <h1 class="text-center">Our Hard Ice Cream Menu</h1>
+                <ul>
+                  <li>Vanilla</li>
+                  <li>Chocolate</li>
+                  <li>Strawberry</li>
+                  <li>Rocky Road</li>
+                  <li>Panda Paws</li>
+                  <li>Rainbow Sherbert</li>
+                </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid text-center section-header">
+            <h1 id="location">Location & Hours</h1>
+        </section>
+
+      <section class="container-fluid px-0">
+          <div class="row align-items-center">
+            <div class="col-lg-6 pink-box box" id="address-box">
+              <h1 class="text-center">Our Address & Phone Number</h1>
+                <p class="element-text text-center">207 S Lake St
+                <br>North East, Pennsylvania
+                <BR>(814) 347-5166 </p>     
+                   
+            </div>
+            
+            <div class="col-lg-6 white-box box">
+                <h1 class="text-center">Our Hours</h1>
+                  <table>
+                    <tr>
+                      <th>Day</th>
+                      <th>Hours</th>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>12p-10p</td>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>12p-9p</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>12p-9p</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>12p-9p</td>
+                    </tr>
+                    <tr>
+                      <td>Thursday</td>
+                      <td>12p-9p</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>12p-10p</td>
+                    </tr>  
+                    <tr>
+                      <td>Saturday</td>
+                      <td>12p-10p</td>
+                    </tr>                                        
+                  </table>
+            </div>
+          </div>
+        </section>
+    
+        <section class="container-fluid text-center section-header" id="footer">
+          <h1>THE STRAW HAT SUNDAE SHOP</h1>
+          <div class="social-icons">
+              <ul class="navbar-nav">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
